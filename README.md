@@ -41,3 +41,28 @@ Check which congestion-control algorithm is active:
 
 ```sh
 cat /proc/sys/net/ipv4/tcp_congestion_control
+
+Watch the module's own log:
+
+Bash
+tail -f /data/adb/netspeedx/netspeedx.log
+Check the current mode:
+
+Bash
+cat /data/adb/netspeedx/state
+Configuration
+Edit /data/adb/netspeedx/config (created on first install) and reboot, or restart the daemon, to apply changes:
+
+INTERVAL=15
+DL_THRESHOLD=1200000
+DL_ENTER=2
+DL_EXIT=2
+DNS1=1.1.1.1
+DNS2=8.8.8.8
+TCP_CONG=
+
+Add extra apps that should trigger Streaming mode in /data/adb/netspeedx/streaming_apps.txt:
+
+com.mycustom.videoapp
+Uninstall
+Remove the module from your root manager's Modules tab and reboot. uninstall.sh restores every kernel value back to its original state.
