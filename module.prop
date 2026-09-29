@@ -1,7 +1,0 @@
-id=netspeedx
-name=NetSpeedX
-version=v1.2.0
-versionCode=4
-author=Hafiz
-minMagisk=24000
-description=Low-latency adaptive TCP/UDP/Wi-Fi tuning for YouTube 3x streaming and fast downloads.
