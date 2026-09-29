@@ -1,0 +1,5 @@
+# NetSpeedX - static, always-safe properties (dynamic tuning lives in service.sh/daemon.sh)
+# Legacy netd buffer hints: rx min,def,max, tx min,def,max
+net.tcp.buffersize.wifi=4096,87380,4194304,4096,65536,4194304
+net.tcp.buffersize.default=4096,87380,4194304,4096,65536,4194304
+net.tcp.default_init_rwnd=60
